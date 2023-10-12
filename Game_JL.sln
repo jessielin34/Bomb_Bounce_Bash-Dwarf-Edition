@@ -17,12 +17,12 @@ Global
 		RelWithDebInfo|x64 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Debug|x64.ActiveCfg = Release|x64
-		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Debug|x64.Build.0 = Release|x64
+		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Debug|x64.ActiveCfg = Debug|x64
+		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Debug|x64.Build.0 = Debug|x64
 		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.MinSizeRel|x64.ActiveCfg = Debug|x64
 		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.MinSizeRel|x64.Build.0 = Debug|x64
-		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Release|x64.ActiveCfg = Debug|x64
-		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Release|x64.Build.0 = Debug|x64
+		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Release|x64.ActiveCfg = Release|x64
+		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.Release|x64.Build.0 = Release|x64
 		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{EB023CF6-B857-40FC-AA97-B09DCCCD1EF1}.RelWithDebInfo|x64.Build.0 = Release|x64
 		{733E4031-BF9B-4E09-8C0C-B652550813BC}.Debug|x64.ActiveCfg = Debug|x64
