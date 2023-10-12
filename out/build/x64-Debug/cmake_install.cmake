@@ -34,6 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/glfw/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/cmake_install.cmake")
 endif()
 

@@ -1,0 +1,10 @@
+^C:\USERS\ETHAN\DESKTOP\GAME ENGINES\GAME_JL\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ethan/Desktop/Game Engines/Game_JL/glfw" "-BC:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj" --check-stamp-file "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,5 +1,5 @@
 #include "pch.h"
 
 void Hello() {
-	std::cout << "Hi\n";
+	std::cout << "Hi\n!";
 }

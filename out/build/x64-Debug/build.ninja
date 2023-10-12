@@ -63,6 +63,395 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ethan/Desktop/Game Engines/Game_JL/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for uninstall
+
+build glfw\uninstall: phony glfw\CMakeFiles\uninstall
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw\edit_cache: phony glfw\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\ethan\Desktop\Game Engines\Game_JL" -B"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw\rebuild_cache: phony glfw\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build glfw\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build glfw\CMakeFiles\install.util: CUSTOM_COMMAND glfw\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build glfw\install: phony glfw\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND glfw\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build glfw\install\local: phony glfw\CMakeFiles\install\local.util
+
+
+#############################################
+# Custom command for glfw\CMakeFiles\uninstall
+
+build glfw\CMakeFiles\uninstall | ${cmake_ninja_workdir}glfw\CMakeFiles\uninstall: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/glfw/cmake_uninstall.cmake""
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || glfw\src\CMakeFiles\glfw.dir
+
+build glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\platform.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+build glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DDWARF_MSCPP -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src"
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library glfw\src\glfw3.lib
+
+build glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug glfw\src\CMakeFiles\glfw.dir\context.c.obj glfw\src\CMakeFiles\glfw.dir\init.c.obj glfw\src\CMakeFiles\glfw.dir\input.c.obj glfw\src\CMakeFiles\glfw.dir\monitor.c.obj glfw\src\CMakeFiles\glfw.dir\platform.c.obj glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj glfw\src\CMakeFiles\glfw.dir\window.c.obj glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj glfw\src\CMakeFiles\glfw.dir\null_init.c.obj glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj glfw\src\CMakeFiles\glfw.dir\null_window.c.obj glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = glfw\src\glfw3.lib
+  TARGET_PDB = glfw\src\glfw3.pdb
+
+
+#############################################
+# Utility command for update_mappings
+
+build glfw\src\update_mappings: phony glfw\src\CMakeFiles\update_mappings
+
+
+#############################################
+# Utility command for edit_cache
+
+build glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build glfw\src\edit_cache: phony glfw\src\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\ethan\Desktop\Game Engines\Game_JL" -B"C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build glfw\src\rebuild_cache: phony glfw\src\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build glfw\src\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND glfw\src\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build glfw\src\install: phony glfw\src\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND glfw\src\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\glfw\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build glfw\src\install\local: phony glfw\src\CMakeFiles\install\local.util
+
+
+#############################################
+# Custom command for glfw\src\CMakeFiles\update_mappings
+
+build glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}glfw\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
+  DESC = Updating gamepad mappings from upstream repository
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/ethan/Desktop/Game Engines/Game_JL/CMakeLists.txt
@@ -75,11 +464,12 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 #############################################
 # Order-only phony target for Dwarf
 
-build cmake_object_order_depends_target_Dwarf: phony || Dwarf\CMakeFiles\Dwarf.dir
+build cmake_object_order_depends_target_Dwarf: phony || cmake_object_order_depends_target_glfw
 
 build Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.cxx.obj: CXX_COMPILER__Dwarf_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\out\build\x64-Debug\Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.cxx | Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.hxx || cmake_object_order_depends_target_Dwarf
   DEFINES = -DDC_DEBUG=2 -DDWARF_LIB -DDWARF_MSCPP -DDwarf_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd "/YcC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/cmake_pch.hxx" "/FpC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/./cmake_pch.cxx.pch" "/FIC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/cmake_pch.hxx"
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\Dwarf\..\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include"
   OBJECT_DIR = Dwarf\CMakeFiles\Dwarf.dir
   OBJECT_FILE_DIR = Dwarf\CMakeFiles\Dwarf.dir
   TARGET_COMPILE_PDB = Dwarf\CMakeFiles\Dwarf.dir\
@@ -94,6 +484,7 @@ build Dwarf\CMakeFiles\Dwarf.dir\.\cmake_pch.cxx.pch: phony Dwarf\CMakeFiles\Dwa
 build Dwarf\CMakeFiles\Dwarf.dir\placeholder.cpp.obj: CXX_COMPILER__Dwarf_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Dwarf\placeholder.cpp | Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.hxx Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Dwarf
   DEFINES = -DDC_DEBUG=2 -DDWARF_LIB -DDWARF_MSCPP -DDwarf_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd "/YuC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/cmake_pch.hxx" "/FpC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/./cmake_pch.cxx.pch" "/FIC:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/Dwarf/CMakeFiles/Dwarf.dir/cmake_pch.hxx"
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\Dwarf\..\glfw\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include"
   OBJECT_DIR = Dwarf\CMakeFiles\Dwarf.dir
   OBJECT_FILE_DIR = Dwarf\CMakeFiles\Dwarf.dir
   TARGET_COMPILE_PDB = Dwarf\CMakeFiles\Dwarf.dir\
@@ -107,10 +498,10 @@ build Dwarf\CMakeFiles\Dwarf.dir\placeholder.cpp.obj: CXX_COMPILER__Dwarf_unscan
 #############################################
 # Link the shared library Dwarf.dll
 
-build Dwarf.dll Dwarf\Dwarf.lib: CXX_SHARED_LIBRARY_LINKER__Dwarf_Debug Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.cxx.obj Dwarf\CMakeFiles\Dwarf.dir\placeholder.cpp.obj
+build Dwarf.dll Dwarf\Dwarf.lib: CXX_SHARED_LIBRARY_LINKER__Dwarf_Debug Dwarf\CMakeFiles\Dwarf.dir\cmake_pch.cxx.obj Dwarf\CMakeFiles\Dwarf.dir\placeholder.cpp.obj | glfw\src\glfw3.lib || glfw\src\glfw3.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = Dwarf\CMakeFiles\Dwarf.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -143,6 +534,36 @@ build Dwarf\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build Dwarf\rebuild_cache: phony Dwarf\CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build Dwarf\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Dwarf\CMakeFiles\install.util: CUSTOM_COMMAND Dwarf\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\Dwarf" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Dwarf\install: phony Dwarf\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Dwarf\CMakeFiles\install\local.util: CUSTOM_COMMAND Dwarf\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\Dwarf" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Dwarf\install\local: phony Dwarf\CMakeFiles\install\local.util
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/ethan/Desktop/Game Engines/Game_JL/CMakeLists.txt
@@ -155,11 +576,12 @@ build Dwarf\rebuild_cache: phony Dwarf\CMakeFiles\rebuild_cache.util
 #############################################
 # Order-only phony target for Game_JL
 
-build cmake_object_order_depends_target_Game_JL: phony || cmake_object_order_depends_target_Dwarf
+build cmake_object_order_depends_target_Game_JL: phony || cmake_object_order_depends_target_Dwarf cmake_object_order_depends_target_glfw
 
 build Game_JL\CMakeFiles\Game_JL.dir\main.cpp.obj: CXX_COMPILER__Game_JL_unscanned_Debug C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Game_JL\main.cpp || cmake_object_order_depends_target_Game_JL
+  DEFINES = -DDWARF_MSCPP
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\Game_JL\..\Dwarf\include"
+  INCLUDES = -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\Game_JL\..\Dwarf\include" -I"C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw\include"
   OBJECT_DIR = Game_JL\CMakeFiles\Game_JL.dir
   OBJECT_FILE_DIR = Game_JL\CMakeFiles\Game_JL.dir
   TARGET_COMPILE_PDB = Game_JL\CMakeFiles\Game_JL.dir\
@@ -173,10 +595,10 @@ build Game_JL\CMakeFiles\Game_JL.dir\main.cpp.obj: CXX_COMPILER__Game_JL_unscann
 #############################################
 # Link the executable Game_JL.exe
 
-build Game_JL.exe: CXX_EXECUTABLE_LINKER__Game_JL_Debug Game_JL\CMakeFiles\Game_JL.dir\main.cpp.obj | Dwarf\Dwarf.lib || Dwarf.dll
+build Game_JL.exe: CXX_EXECUTABLE_LINKER__Game_JL_Debug Game_JL\CMakeFiles\Game_JL.dir\main.cpp.obj | Dwarf\Dwarf.lib glfw\src\glfw3.lib || Dwarf.dll glfw\src\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Dwarf\Dwarf.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = Dwarf\Dwarf.lib  glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = Game_JL\CMakeFiles\Game_JL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -208,12 +630,50 @@ build Game_JL\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build Game_JL\rebuild_cache: phony Game_JL\CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build Game_JL\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Game_JL\CMakeFiles\install.util: CUSTOM_COMMAND Game_JL\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\Game_JL" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Game_JL\install: phony Game_JL\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Game_JL\CMakeFiles\install\local.util: CUSTOM_COMMAND Game_JL\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\ethan\Desktop\Game Engines\Game_JL\out\build\x64-Debug\Game_JL" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Game_JL\install\local: phony Game_JL\CMakeFiles\install\local.util
+
 # =============================================================================
 # Target aliases.
 
 build Dwarf: phony Dwarf.dll
 
 build Game_JL: phony Game_JL.exe
+
+build glfw: phony glfw\src\glfw3.lib
+
+build glfw3.lib: phony glfw\src\glfw3.lib
+
+build uninstall: phony glfw\uninstall
+
+build update_mappings: phony glfw\src\update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -223,7 +683,7 @@ build Game_JL: phony Game_JL.exe
 #############################################
 # Folder: C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug
 
-build all: phony Dwarf\all Game_JL\all
+build all: phony glfw\all Dwarf\all Game_JL\all
 
 # =============================================================================
 
@@ -240,20 +700,34 @@ build Dwarf\all: phony Dwarf.dll
 build Game_JL\all: phony Game_JL.exe
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/glfw
+
+build glfw\all: phony glfw\src\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/ethan/Desktop/Game Engines/Game_JL/out/build/x64-Debug/glfw/src
+
+build glfw\src\all: phony glfw\src\glfw3.lib
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Dwarf\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Game_JL\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Dwarf\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\glfw3.pc.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\glfw3Config.cmake.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Dwarf\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Game_JL\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Dwarf\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\Game_JL\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMakeLists.txt C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\glfw3.pc.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\CMake\glfw3Config.cmake.in C$:\Users\ethan\Desktop\Game$ Engines\Game_JL\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake: phony
 
 
 #############################################

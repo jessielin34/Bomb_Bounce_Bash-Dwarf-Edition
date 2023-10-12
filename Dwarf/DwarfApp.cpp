@@ -20,8 +20,13 @@ namespace dwarf
 
 	template <typename T>
 	void DwarfApp<T>::Run() {
+		mWindow.Create("Game_JL", 1000, 800);
+
 		while (mShouldContinue) {
 			OnUpdate();
+
+			mWindow.SwapBuffers();
+			mWindow.PollEvents();
 		}
 	}
 

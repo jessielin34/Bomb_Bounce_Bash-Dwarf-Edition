@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw_proj\CMakeFiles\85bbd330d530e3a8daf161337f9248e0\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C59176E8-DF3F-31BF-BD50-489E0855AF3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

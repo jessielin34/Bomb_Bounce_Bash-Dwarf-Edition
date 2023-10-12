@@ -10,14 +10,10 @@ set(SOURCE_FILES
 add_definitions(-DDC_DEBUG=2)
 add_definitions(-DDWARF_LIB)
 
-if(WIN32)
-	add_definitions(-DDWARF_MSCPP)
-elseif(LINUX)
-	add_definitions(-DDWARF_LINUX)
-elseif(APPLE)
-	add_definitions(-DDWARF_APPLE)
-endif()
+include_directories(../glfw/include)
 
 add_library(Dwarf SHARED ${HEADER_FILES} ${SOURCE_FILES})
 
 target_precompile_headers(Dwarf PRIVATE pch.h)
+
+target_link_libraries(Dwarf glfw)
