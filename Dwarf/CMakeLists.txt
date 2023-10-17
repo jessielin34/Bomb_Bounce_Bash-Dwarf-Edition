@@ -2,14 +2,19 @@ set(HEADER_FILES
 	include/Dwarf.h
 	DwarfApp.h
 	Utilities.h
+	GameWindow.h
+	WindowImplementation.h
+	GLFWCode/GLFWImplementation.h
 )
 set(SOURCE_FILES
-	placeholder.cpp
+	GameWindow.cpp
+	GLFWCode/GLFWImplementation.h
 )
 
 add_definitions(-DDC_DEBUG=2)
 add_definitions(-DDWARF_LIB)
 
+include_directories(../Dwarf)
 include_directories(../glfw/include)
 
 add_library(Dwarf SHARED ${HEADER_FILES} ${SOURCE_FILES})
