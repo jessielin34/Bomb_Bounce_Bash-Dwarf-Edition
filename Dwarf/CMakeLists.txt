@@ -8,7 +8,7 @@ set(HEADER_FILES
 )
 set(SOURCE_FILES
 	GameWindow.cpp
-	GLFWCode/GLFWImplementation.h
+	GLFWCode/GLFWImplementation.cpp
 )
 
 add_definitions(-DDC_DEBUG=2)
