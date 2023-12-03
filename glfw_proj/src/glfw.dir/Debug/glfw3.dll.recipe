@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\ethan\Desktop\Game Engines\Game_JL\x64\Debug\glfw3.dll</FullPath>
+      <FullPath>C:\Users\ethan\Desktop\Game Engines\Game_JL\glfw_proj\src\Debug\glfw3.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.7.2+d6990bcfa for .NET Framework
-      Build started 10/8/2023 4:59:31 PM.
+      Build started 12/2/2023 2:22:56 PM.
       
       Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\3.27.6\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -52,7 +52,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.53
+      Time Elapsed 00:00:01.42
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -71,8 +71,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fn2sfd"
-      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fn2sfd"
+      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-6v0b3g"
+      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-6v0b3g"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -81,39 +81,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fn2sfd'
+        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-6v0b3g'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_24a44.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a5151.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 10/8/2023 4:59:33 PM.
+        Build started 12/2/2023 2:22:58 PM.
         
-        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fn2sfd\\cmTC_24a44.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-6v0b3g\\cmTC_a5151.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_24a44.dir\\Debug\\".
-          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fn2sfd\\Debug\\".
-          Creating directory "cmTC_24a44.dir\\Debug\\cmTC_24a44.tlog\\".
+          Creating directory "cmTC_a5151.dir\\Debug\\".
+          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-6v0b3g\\Debug\\".
+          Creating directory "cmTC_a5151.dir\\Debug\\cmTC_a5151.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_24a44.dir\\Debug\\cmTC_24a44.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_24a44.dir\\Debug\\cmTC_24a44.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a5151.dir\\Debug\\cmTC_a5151.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a5151.dir\\Debug\\cmTC_a5151.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24a44.dir\\Debug\\\\" /Fd"cmTC_24a44.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5151.dir\\Debug\\\\" /Fd"cmTC_a5151.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32824 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24a44.dir\\Debug\\\\" /Fd"cmTC_24a44.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5151.dir\\Debug\\\\" /Fd"cmTC_a5151.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fn2sfd\\Debug\\cmTC_24a44.exe" /INCREMENTAL /ILK:"cmTC_24a44.dir\\Debug\\cmTC_24a44.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fn2sfd/Debug/cmTC_24a44.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fn2sfd/Debug/cmTC_24a44.lib" /MACHINE:X64  /machine:x64 cmTC_24a44.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_24a44.vcxproj -> C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fn2sfd\\Debug\\cmTC_24a44.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-6v0b3g\\Debug\\cmTC_a5151.exe" /INCREMENTAL /ILK:"cmTC_a5151.dir\\Debug\\cmTC_a5151.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-6v0b3g/Debug/cmTC_a5151.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-6v0b3g/Debug/cmTC_a5151.lib" /MACHINE:X64  /machine:x64 cmTC_a5151.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_a5151.vcxproj -> C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-6v0b3g\\Debug\\cmTC_a5151.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_24a44.dir\\Debug\\cmTC_24a44.tlog\\unsuccessfulbuild".
-          Touching "cmTC_24a44.dir\\Debug\\cmTC_24a44.tlog\\cmTC_24a44.lastbuildstate".
-        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fn2sfd\\cmTC_24a44.vcxproj" (default targets).
+          Deleting file "cmTC_a5151.dir\\Debug\\cmTC_a5151.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a5151.dir\\Debug\\cmTC_a5151.tlog\\cmTC_a5151.lastbuildstate".
+        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-6v0b3g\\cmTC_a5151.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.21
+        Time Elapsed 00:00:01.20
         
       exitCode: 0
   -
@@ -127,8 +127,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-tql6ot"
-      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-tql6ot"
+      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-s45n0c"
+      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-s45n0c"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -138,39 +138,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-tql6ot'
+        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-s45n0c'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ccb6e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9de0d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 10/8/2023 4:59:36 PM.
+        Build started 12/2/2023 2:23:00 PM.
         
-        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\cmTC_ccb6e.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\cmTC_9de0d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ccb6e.dir\\Debug\\".
-          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\Debug\\".
-          Creating directory "cmTC_ccb6e.dir\\Debug\\cmTC_ccb6e.tlog\\".
+          Creating directory "cmTC_9de0d.dir\\Debug\\".
+          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\Debug\\".
+          Creating directory "cmTC_9de0d.dir\\Debug\\cmTC_9de0d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ccb6e.dir\\Debug\\cmTC_ccb6e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ccb6e.dir\\Debug\\cmTC_ccb6e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_9de0d.dir\\Debug\\cmTC_9de0d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9de0d.dir\\Debug\\cmTC_9de0d.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccb6e.dir\\Debug\\\\" /Fd"cmTC_ccb6e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9de0d.dir\\Debug\\\\" /Fd"cmTC_9de0d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32824 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccb6e.dir\\Debug\\\\" /Fd"cmTC_ccb6e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\src.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9de0d.dir\\Debug\\\\" /Fd"cmTC_9de0d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\src.c"
           src.c
-        C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\cmTC_ccb6e.vcxproj]
-        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\cmTC_ccb6e.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\cmTC_9de0d.vcxproj]
+        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\cmTC_9de0d.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\cmTC_ccb6e.vcxproj" (default target) (1) ->
+        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\cmTC_9de0d.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-tql6ot\\cmTC_ccb6e.vcxproj]
+          C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-s45n0c\\cmTC_9de0d.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.06
+        Time Elapsed 00:00:01.03
         
       exitCode: 1
   -
@@ -183,8 +183,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-7wca1t"
-      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-7wca1t"
+      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fc26ep"
+      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fc26ep"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -194,41 +194,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-7wca1t'
+        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fc26ep'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2700c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_adcb2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 10/8/2023 4:59:38 PM.
+        Build started 12/2/2023 2:23:02 PM.
         
-        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\cmTC_2700c.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\cmTC_adcb2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_2700c.dir\\Debug\\".
-          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\Debug\\".
-          Creating directory "cmTC_2700c.dir\\Debug\\cmTC_2700c.tlog\\".
+          Creating directory "cmTC_adcb2.dir\\Debug\\".
+          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\Debug\\".
+          Creating directory "cmTC_adcb2.dir\\Debug\\cmTC_adcb2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2700c.dir\\Debug\\cmTC_2700c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2700c.dir\\Debug\\cmTC_2700c.tlog\\unsuccessfulbuild".
+          Creating "cmTC_adcb2.dir\\Debug\\cmTC_adcb2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_adcb2.dir\\Debug\\cmTC_adcb2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2700c.dir\\Debug\\\\" /Fd"cmTC_2700c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_adcb2.dir\\Debug\\\\" /Fd"cmTC_adcb2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32824 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2700c.dir\\Debug\\\\" /Fd"cmTC_2700c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_adcb2.dir\\Debug\\\\" /Fd"cmTC_adcb2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\Debug\\cmTC_2700c.exe" /INCREMENTAL /ILK:"cmTC_2700c.dir\\Debug\\cmTC_2700c.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-7wca1t/Debug/cmTC_2700c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-7wca1t/Debug/cmTC_2700c.lib" /MACHINE:X64  /machine:x64 cmTC_2700c.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\cmTC_2700c.vcxproj]
-        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\cmTC_2700c.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\Debug\\cmTC_adcb2.exe" /INCREMENTAL /ILK:"cmTC_adcb2.dir\\Debug\\cmTC_adcb2.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fc26ep/Debug/cmTC_adcb2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-fc26ep/Debug/cmTC_adcb2.lib" /MACHINE:X64  /machine:x64 cmTC_adcb2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\cmTC_adcb2.vcxproj]
+        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\cmTC_adcb2.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\cmTC_2700c.vcxproj" (default target) (1) ->
+        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\cmTC_adcb2.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-7wca1t\\cmTC_2700c.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-fc26ep\\cmTC_adcb2.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.12
+        Time Elapsed 00:00:01.10
         
       exitCode: 1
   -
@@ -241,8 +241,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-lw99ru"
-      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-lw99ru"
+      source: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-5ct66q"
+      binary: "C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-5ct66q"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -252,41 +252,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-lw99ru'
+        Change Dir: 'C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-5ct66q'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a39d1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d0e85.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 10/8/2023 4:59:39 PM.
+        Build started 12/2/2023 2:23:03 PM.
         
-        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\cmTC_a39d1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\cmTC_d0e85.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_a39d1.dir\\Debug\\".
-          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\Debug\\".
-          Creating directory "cmTC_a39d1.dir\\Debug\\cmTC_a39d1.tlog\\".
+          Creating directory "cmTC_d0e85.dir\\Debug\\".
+          Creating directory "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\Debug\\".
+          Creating directory "cmTC_d0e85.dir\\Debug\\cmTC_d0e85.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a39d1.dir\\Debug\\cmTC_a39d1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a39d1.dir\\Debug\\cmTC_a39d1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d0e85.dir\\Debug\\cmTC_d0e85.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d0e85.dir\\Debug\\cmTC_d0e85.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a39d1.dir\\Debug\\\\" /Fd"cmTC_a39d1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d0e85.dir\\Debug\\\\" /Fd"cmTC_d0e85.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32824 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a39d1.dir\\Debug\\\\" /Fd"cmTC_a39d1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d0e85.dir\\Debug\\\\" /Fd"cmTC_d0e85.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\Debug\\cmTC_a39d1.exe" /INCREMENTAL /ILK:"cmTC_a39d1.dir\\Debug\\cmTC_a39d1.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-lw99ru/Debug/cmTC_a39d1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-lw99ru/Debug/cmTC_a39d1.lib" /MACHINE:X64  /machine:x64 cmTC_a39d1.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\cmTC_a39d1.vcxproj]
-        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\cmTC_a39d1.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\Debug\\cmTC_d0e85.exe" /INCREMENTAL /ILK:"cmTC_d0e85.dir\\Debug\\cmTC_d0e85.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-5ct66q/Debug/cmTC_d0e85.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ethan/Desktop/Game Engines/Game_JL/glfw_proj/CMakeFiles/CMakeScratch/TryCompile-5ct66q/Debug/cmTC_d0e85.lib" /MACHINE:X64  /machine:x64 cmTC_d0e85.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\cmTC_d0e85.vcxproj]
+        Done Building Project "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\cmTC_d0e85.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\cmTC_a39d1.vcxproj" (default target) (1) ->
+        "C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\cmTC_d0e85.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-lw99ru\\cmTC_a39d1.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ethan\\Desktop\\Game Engines\\Game_JL\\glfw_proj\\CMakeFiles\\CMakeScratch\\TryCompile-5ct66q\\cmTC_d0e85.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.11
+        Time Elapsed 00:00:01.10
         
       exitCode: 1
 ...

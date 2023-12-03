@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "GLFWImplementation.h"
 #include "GLFW/glfw3.h"
+#include "Utilities.h"
 
 namespace dwarf
 {
@@ -12,7 +13,14 @@ namespace dwarf
 	}
 
 	void GLFWImplementation::Create(const std::string& name, int width, int height) {
-		mWindow = glfwCreateWindow(800, 600, "Game_JL", NULL, NULL);
+		mWindow = glfwCreateWindow(width, height, "Game_JL", NULL, NULL);
+
+		if (mWindow == NULL) {
+			DC_ERROR("Failed to create GLFW window");
+			glfwTerminate();
+			return;
+		}
+		glfwMakeContextCurrent(mWindow);
 	}
 
 	int GLFWImplementation::GetHeight() const {

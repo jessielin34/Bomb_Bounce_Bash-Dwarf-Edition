@@ -4,7 +4,7 @@
 class MyGame : public dwarf::DwarfApp<MyGame> { //dwarf is for the namespace name
 	public:
 		virtual void OnUpdate() override {
-			std::cout << "Dwarf running" << std::endl;
+			//std::cout << "Dwarf running" << std::endl;
 		}
 };
 
