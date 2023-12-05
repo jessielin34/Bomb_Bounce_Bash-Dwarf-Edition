@@ -11,7 +11,7 @@ namespace dwarf {
 		public:
 			Renderer();
 			void Init();
-			//void Draw(int x, int y, Picture& pic);
+			void Draw(int x, int y, Picture& pic);
 			void Clear();
 		private: 
 			std::unique_ptr<RendererImplementation> mImplementation;

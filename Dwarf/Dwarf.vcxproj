@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DwarfApp.h" />
+    <ClInclude Include="Events.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="GLFWCode\GLFWImplementation.h" />
     <ClInclude Include="GLFWCode\OpenGLRenderer.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="WindowImplementation.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Events.cpp" />
     <ClCompile Include="GameWindow.cpp" />
     <ClCompile Include="GLFWCode\GLFWImplementation.cpp" />
     <ClCompile Include="GLFWCode\OpenGLShader.cpp" />

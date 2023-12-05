@@ -9,7 +9,8 @@
 namespace dwarf {
 	class DWARF_API Picture {
 		public:
-			Picture();
+			Picture(const std::string& imageFile);
+			Picture(std::string&& imageFile);
 			void Bind();
 			int GetHeight() const;
 			int GetWidth() const;

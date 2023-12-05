@@ -16,7 +16,9 @@ namespace dwarf
 	DwarfApp<T>::DwarfApp() {
 		mWindow.Create("Game JL", 1000, 800);
 
-		//mRenderer.Init();
+		mRenderer.Init();
+
+		SetWindowCloseCallback([this]() {DefaultWindowCloseHandler(); })
 	}
 
 	template <typename T>
@@ -33,9 +35,6 @@ namespace dwarf
 
 	template <typename T>
 	void DwarfApp<T>::Run() {
-		mWindow.Create("Game_JL", 1000, 800);
-
-		/*use this after implementing picture class
 		dwarf::Shader shader{ "../Assets/Shaders/DefaultVertexShader.glsl", "../Assets/Shaders/DefaultFragmentShader.glsl" };
 
 		while (mShouldContinue) {
@@ -50,10 +49,8 @@ namespace dwarf
 			mWindow.PollEvents();
 		}
 
-		*/
-
 		//can be deleted
-		float vertices[] = {
+		/*float vertices[] = {
 			100.f, 100.f, 0.0f, 0.0f,
 			300.f, 100.f, 1.0f, 0.0f,
 			100.f, 300.f, 0.0f, 1.0f,
@@ -130,17 +127,36 @@ namespace dwarf
 
 			mWindow.SwapBuffers();
 			mWindow.PollEvents();
-		}
+		}*/
 	}
 
 	template <typename T>
 	void DwarfApp<T>::OnUpdate() {
 	}
 
-	/* 
 	template<typename T>
 	void DwarfApp<T>::Draw(int x, int y, Picture& pic) {
-		mRenderer.Draw(100, 200, pic);
+		mRenderer.Draw(x, y, pic);
 	}
-	*/
+
+	template<typename T>
+	void DwarfApp<T>::SetKeyPressedCallback(std::function<void(const KeyPressed&)> callbackFunc) {
+		mWindow.SetKeyPressedCallback(callbackFunc);
+	}
+
+	template<typename T>
+	void DwarfApp<T>::SetKeyReleasedCallback(std::function<void(const KeyReleased&)> callbackFunc) {
+		mWindow.SetKeyReleasedCallback(callbackFunc);
+	}
+
+	template<typename T>
+	void DwarfApp<T>::SetWindowCloseCallback(std::function<void()> callbackFunc) {
+		mWindow.SetWindowCloseCallback(callbackFunc);
+	}
+
+	template<typename T>
+	void DwarfApp<T>::DefaultWindowCloseHandler() {
+		mShouldContinue = false;
+	}
+	
 };
