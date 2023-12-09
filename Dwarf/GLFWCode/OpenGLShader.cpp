@@ -2,7 +2,7 @@
 
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
-#include "OpenGLShader.h"
+#include "GLFWCode/OpenGLShader.h"
 #include "../Utilities.h"
 
 namespace dwarf {

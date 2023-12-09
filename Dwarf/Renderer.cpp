@@ -13,7 +13,7 @@ dwarf::Renderer::Renderer() {
 }
 
 void dwarf::Renderer::Init() {
-	mImplemnentation->Init();
+	mImplementation->Init();
 }
 
 void dwarf::Renderer::Draw(int x, int y, Picture& pic) {

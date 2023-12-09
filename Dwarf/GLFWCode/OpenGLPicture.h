@@ -13,11 +13,8 @@ namespace dwarf {
 			virtual int GetHeight() const override;
 			virtual int GetWidth() const override;
 		private:
-			unsigned int VAO;
-			unsigned int VBO;
-			unsigned int EBO;
-			unsigned int texture;
-			int num;
+			unsigned int texture{ 0 };
+			int nrChannels{ 0 };
 			int mWidth{ 0 };
 			int mHeight{ 0 };
 	};

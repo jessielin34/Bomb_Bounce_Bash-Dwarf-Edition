@@ -4,9 +4,12 @@
 #include "GameWindow.h"
 #include "Renderer.h"
 #include "Picture.h"
+#include "Unit.h"
 
 
 namespace dwarf {
+	constexpr int FPS{ 60 };
+
 	template <typename T>
 	class DwarfApp {
 		public:
@@ -27,6 +30,9 @@ namespace dwarf {
 			GameWindow mWindow;
 			Renderer mRenderer;
 			bool mShouldContinue{ true };
+
+			std::chrono::milliseconds mFrameDuration{ std::chrono::milliseconds{1000} / FPS };
+			std::chrono::steady_clock::time_point mNextFrameTime;
 	};
 }
 

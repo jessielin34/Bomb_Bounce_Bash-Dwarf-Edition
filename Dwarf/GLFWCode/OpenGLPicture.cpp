@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "GLFWCode/OpenGLPicture.h"
+#include "OpenGLPicture.h"
 
 #include "../glad/include/glad/glad.h"
 #include "../glfw/include/GLFW/glfw3.h"

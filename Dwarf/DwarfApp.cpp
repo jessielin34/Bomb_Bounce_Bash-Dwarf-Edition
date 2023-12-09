@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "DwarfApp.h"
 #include "Utilities.h"
-
+#include "include/Dwarf.h"
 #include "../glad/include/glad/glad.h"
 #include "../glfw/include/GLFW/glfw3.h"
 #include "../stbi/stb_image.h"
@@ -18,7 +18,7 @@ namespace dwarf
 
 		mRenderer.Init();
 
-		SetWindowCloseCallback([this]() {DefaultWindowCloseHandler(); })
+		SetWindowCloseCallback([this]() {DefaultWindowCloseHandler(); });
 	}
 
 	template <typename T>
@@ -36,14 +36,20 @@ namespace dwarf
 	template <typename T>
 	void DwarfApp<T>::Run() {
 		dwarf::Shader shader{ "../Assets/Shaders/DefaultVertexShader.glsl", "../Assets/Shaders/DefaultFragmentShader.glsl" };
+		dwarf::Picture pic{ "../Dwarf/OpenGLPicture.cpp" }; //unsure if this is correct 
+		mNextFrameTime = std::chrono::steady_clock::now();
 
 		while (mShouldContinue) {
 			mRenderer.Clear();
 
 			shader.Bind();
+			//pic.Bind(); 
 			shader.SetUniform2Ints("ScreenSize", mWindow.GetWidth(), mWindow.GetHeight());
 
 			OnUpdate();
+
+			std::this_thread::sleep_until(mNextFrameTime);
+			mNextFrameTime = std::chrono::steady_clock::now() + mFrameDuration;
 
 			mWindow.SwapBuffers();
 			mWindow.PollEvents();
@@ -88,7 +94,7 @@ namespace dwarf
 		shader.SetUniform2Ints("ScreenSize", 1000, 800);
 
 		///////////// Textures ////////////////////
-		dwarf::Picture pic{ "Dwarf/Picture.cpp" } //unsure if this is correct
+		dwarf::Picture pic{ "../Dwarf/OpenGLPicture.cpp" } //unsure if this is correct
 		//creating texture in picture class; can delete this
 		unsigned int texture;
 		glGenTextures(1, &texture);

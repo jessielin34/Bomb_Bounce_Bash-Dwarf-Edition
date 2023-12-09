@@ -141,6 +141,7 @@
     <ClInclude Include="GLFWCode\GLFWImplementation.h" />
     <ClInclude Include="GLFWCode\OpenGLRenderer.h" />
     <ClInclude Include="GLFWCode\OpenGLShader.h" />
+    <ClInclude Include="Keys.h" />
     <ClInclude Include="OpenGLPicture.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="PictureImplementation.h" />
@@ -150,6 +151,7 @@
     <ClInclude Include="include\Dwarf.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ShaderImplementation.h" />
+    <ClInclude Include="Unit.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="WindowImplementation.h" />
   </ItemGroup>
@@ -170,6 +172,7 @@
     </ClCompile>
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\glad\glad.vcxproj">
