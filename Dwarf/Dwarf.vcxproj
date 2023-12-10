@@ -139,10 +139,10 @@
     <ClInclude Include="Events.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="GLFWCode\GLFWImplementation.h" />
-    <ClInclude Include="GLFWCode\OpenGLRenderer.h" />
     <ClInclude Include="GLFWCode\OpenGLShader.h" />
     <ClInclude Include="Keys.h" />
     <ClInclude Include="OpenGLPicture.h" />
+    <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="PictureImplementation.h" />
     <ClInclude Include="Renderer.h" />

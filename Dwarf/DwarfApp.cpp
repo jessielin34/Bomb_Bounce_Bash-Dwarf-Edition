@@ -36,7 +36,7 @@ namespace dwarf
 	template <typename T>
 	void DwarfApp<T>::Run() {
 		dwarf::Shader shader{ "../Assets/Shaders/DefaultVertexShader.glsl", "../Assets/Shaders/DefaultFragmentShader.glsl" };
-		dwarf::Picture pic{ "../Dwarf/OpenGLPicture.cpp" }; //unsure if this is correct 
+		//dwarf::Picture pic{ "../Dwarf/OpenGLPicture.cpp" }; //unsure if this is correct 
 		mNextFrameTime = std::chrono::steady_clock::now();
 
 		while (mShouldContinue) {

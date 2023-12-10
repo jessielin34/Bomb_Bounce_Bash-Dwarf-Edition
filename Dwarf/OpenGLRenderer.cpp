@@ -1,27 +1,28 @@
 #include "pch.h"
-#include "GLFWCode/OpenGLRenderer.h"
+
+#include "OpenGLRenderer.h"
 
 #include "../glad/include/glad/glad.h"
 #include "../glfw/include/GLFW/glfw3.h"
-#include "Utilities.h"
+#include <Utilities.h>
 
 namespace dwarf {
-	void OpenGLRenderer::Init() {
+	void OpenGLRenderer::Init()
+	{
 		if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 			DC_ERROR("Failed to initialize GLAD");
 			return;
 		}
-
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	}
-
-	void OpenGLRenderer::Draw(int x, int y, Picture& pic) {
+	void OpenGLRenderer::Draw(int x, int y, Picture& pic)
+	{
 		float vertices[] = {
 			(float)x, (float)y, 0.0f, 0.0f,
 			(float)x + pic.GetWidth(), (float)y, 1.0f, 0.0f,
 			(float)x, (float)y + pic.GetHeight(), 0.0f, 1.0f,
-			(float)x + pic.GetWidth(), (float)y + pic.GetHeight(), 1.0f, 1.0f
+			(float)x + pic.GetWidth(), (float)y + pic.GetHeight(), 1.0f, 1.0f 
 		};
 
 		unsigned int indices[] = {
@@ -54,13 +55,14 @@ namespace dwarf {
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-		glDeleteBuffers(1, &VBO);
+		glDeleteBuffers(1, &VAO);
 		glDeleteBuffers(1, &EBO);
 		glDeleteVertexArrays(1, &VAO);
 	}
-
-	void OpenGLRenderer::Clear() {
+	void OpenGLRenderer::Clear()
+	{
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 	}
 }
+

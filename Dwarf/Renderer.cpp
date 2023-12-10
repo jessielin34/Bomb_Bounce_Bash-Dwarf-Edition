@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Renderer.h"
-#include "GLFWCode/OpenGLRenderer.h"
+#include "OpenGLRenderer.h"
 
 dwarf::Renderer::Renderer() {
 #ifdef DWARF_MSCPP

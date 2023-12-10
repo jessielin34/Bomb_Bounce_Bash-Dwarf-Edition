@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Picture.h"
-#include "GLFWCode/OpenGLPicture.h"
+#include "OpenGLPicture.h"
 
 namespace dwarf {
 	Picture::Picture(const std::string& imageFile) {
