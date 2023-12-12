@@ -8,13 +8,13 @@ namespace dwarf {
 	public: 
 		OpenGLPicture(const std::string& file);
 		OpenGLPicture(std::string&& file);
-		void Bind() override;
+		virtual void Bind() override;
 		~OpenGLPicture();
 		virtual int GetHeight() const override;
 		virtual int GetWidth() const override;
 	private:
-		unsigned int texture{ 0 };
-		int nrChannels{ 0 };
+		unsigned int texture;
+		//int nrChannels{ 0 };
 		int mWidth{ 0 };
 		int mHeight{ 0 };
 	};

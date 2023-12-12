@@ -3,6 +3,7 @@
 #include "pch.h"
 #include "Utilities.h"
 #include "PictureImplementation.h"
+#include "Shader.h"
 
 namespace dwarf {
 	class DWARF_API Picture {

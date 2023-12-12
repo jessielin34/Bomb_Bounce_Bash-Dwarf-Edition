@@ -9,12 +9,14 @@
 namespace dwarf {
 	OpenGLPicture::OpenGLPicture(const std::string& file)
 	{
+		glGenTextures(1, &texture);
+		glBindTexture(GL_TEXTURE_2D, texture);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 		//loading image
 		int nrChannels;
 		stbi_set_flip_vertically_on_load(true);
-		unsigned char* data = stbi_load("../Assets/Pictures/test.png", &mWidth, &mHeight, &nrChannels, 0);
+		unsigned char* data = stbi_load(file.c_str(), &mWidth, &mHeight, &nrChannels, 0);
 
 		if (data) {
 			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, mWidth, mHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
@@ -27,12 +29,14 @@ namespace dwarf {
 	}
 	OpenGLPicture::OpenGLPicture(std::string&& file)
 	{
+		glGenTextures(1, &texture);
+		glBindTexture(GL_TEXTURE_2D, texture);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 		//loading image
 		int nrChannels;
 		stbi_set_flip_vertically_on_load(true);
-		unsigned char* data = stbi_load("../Assets/Pictures/test.png", &mWidth, &mHeight, &nrChannels, 0);
+		unsigned char* data = stbi_load(file.c_str(), &mWidth, &mHeight, &nrChannels, 0); 
 
 		if (data) {
 			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, mWidth, mHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
@@ -45,12 +49,11 @@ namespace dwarf {
 	}
 	void OpenGLPicture::Bind()
 	{
-		glGenTextures(1, &texture);
 		glBindTexture(GL_TEXTURE_2D, texture);
 	}
 	OpenGLPicture::~OpenGLPicture()
 	{
-		glDeleteTextures(nrChannels, &texture);
+		glDeleteTextures(1, &texture);
 	}
 	int OpenGLPicture::GetHeight() const
 	{

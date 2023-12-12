@@ -146,6 +146,12 @@ namespace dwarf
 	}
 
 	template<typename T>
+	void DwarfApp<T>::Draw(Unit& item)
+	{
+		mRenderer.Draw(item.GetXCoord(), item.GetYCoord(), item.mImage);
+	}
+
+	template<typename T>
 	void DwarfApp<T>::SetKeyPressedCallback(std::function<void(const KeyPressed&)> callbackFunc) {
 		mWindow.SetKeyPressedCallback(callbackFunc);
 	}

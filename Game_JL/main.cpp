@@ -8,11 +8,12 @@ class MyGame : public dwarf::DwarfApp<MyGame> { //dwarf is for the namespace nam
 		}
 		virtual void OnUpdate() override {
 			//std::cout << "Dwarf running" << std::endl;
-			Draw(x, y, mPic);
-			//Draw(mUnit);
+			//Draw(x, y, mPic);
+			Draw(mUnit);
 		}
 
 		void OnKeyPress(const dwarf::KeyPressed& e) {
+			//std::cout << e.GetKeyCode() << std::endl;
 			if (e.GetKeyCode() == DWARF_KEY_RIGHT) {
 				//x += 50;
 				mUnit.UpdateXCoord(50);
