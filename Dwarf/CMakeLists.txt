@@ -7,7 +7,6 @@ set(HEADER_FILES
 	WindowImplementation.h
 	GLFWCode/GLFWImplementation.h
 	GLFWCode/OpenGLShader.h
-	Keys.h
 	OpenGLPicture.h
 	OpenGLRenderer.h
 	Picture.h

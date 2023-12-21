@@ -18,6 +18,4 @@ class BallGenerator {
 public:
 	BallGenerator(); //initializes random numbers
 	std::vector<Ball> GenerateBalls(size_t count);
-private:
-	std::mt19937 rand{ std::random_device{}() }; //random # generator
 };

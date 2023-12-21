@@ -18,6 +18,4 @@ class BombGenerator {
 public:
 	BombGenerator();
 	std::vector<Bomb> GenerateBombs(size_t count);
-private:
-	std::mt19937 rand{ std::random_device{}() };
 };

@@ -23,6 +23,6 @@ add_subdirectory(Game_JL)
 
 set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT Game_JL)
 
-file(COPY Assets Destination ${PROJECT_BINARY_DIR})
-file(COPY Assets Destination ${PROJECT_BINARY_DIR}/Debug)
-file(COPY Assets Destination ${PROJECT_BINARY_DIR}/Release)
+file(COPY Assets DESTINATION ${PROJECT_BINARY_DIR})
+file(COPY Assets DESTINATION ${PROJECT_BINARY_DIR}/Debug)
+file(COPY Assets DESTINATION ${PROJECT_BINARY_DIR}/Release)

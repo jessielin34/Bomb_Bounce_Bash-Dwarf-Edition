@@ -24,10 +24,8 @@ std::vector<Bomb> BombGenerator::GenerateBombs(size_t count)
 	int positionY = 900; //initial vertical position for first bomb
 	std::vector<Bomb> bombs; //vector to store the generated bomb
 
-	std::uniform_int_distribution<int> distance(0, 927); //uniform distribution
-
 	for (size_t i = 0; i < count; ++i) {
-		int randomX = distance(rand);
+		int randomX = rand() % 801;
 		bombs.emplace_back("../Assets/Pictures/bomb.png", randomX, positionY); //create and add bomb to vector
 		positionY += 75;
 	}

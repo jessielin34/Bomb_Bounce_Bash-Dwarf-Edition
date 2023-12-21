@@ -23,10 +23,8 @@ std::vector<Ball> BallGenerator::GenerateBalls(size_t count)
 	int positionY = 900;
 	std::vector<Ball> balls;
 
-	std::uniform_int_distribution<int> distance(0, 927);
-
 	for (size_t i = 0; i < count; ++i) {
-		int randomX = distance(rand);
+		int randomX = rand() % 801;
 		balls.emplace_back("../Assets/Pictures/ball.png", randomX, positionY);
 		positionY += 75;
 	}

@@ -30,12 +30,12 @@ void MyGame::OnUpdate()
 	time++;
 
 	for (size_t i = 0; i < balls.size(); i++) {
-		if (time > (i * 100)) {
+		if (time > (i * 100)) { //update position of each ball
 			int ballSpeed = 3;
 			balls[i].UpdateYCoord(-ballSpeed);
 
 			if (dwarf::UnitsOverlap(dwarfs, balls[i].GetUnit())) {
-				balls.erase(balls.begin() + i);
+				balls.erase(balls.begin() + i); //check collision with dwarf and update score
 				score += 1;
 			}
 
@@ -51,7 +51,7 @@ void MyGame::OnUpdate()
 		if (time > (i * 150)) {
 			int bombspeed = 2;
 			bombs[i].UpdateYCoord(-bombspeed);
-			if (dwarf::UnitsOverlap(dwarfs, bombs[i].GetUnit())) {
+			if (dwarf::UnitsOverlap(dwarfs, bombs[i].GetUnit())) { //check for collisions and end game
 				gameEnd = true;
 				playAgain = true;
 				bombCollision = true;
@@ -60,7 +60,7 @@ void MyGame::OnUpdate()
 		}
 	}
 
-	if (!gameEnd) {
+	if (!gameEnd) { //if game hasn't ended, draw dwarfs, balls, and bombs
 		Draw(dwarfs); 
 		for (auto& b : balls) {
 			dwarf::Unit& ballUnit = b.GetUnit();
@@ -88,12 +88,12 @@ void MyGame::OnKeyPress(const dwarf::KeyPressed& e)
 			}
 		}
 	}
-	if (playAgain && e.GetKeyCode() == DWARF_KEY_SPACE) {
+	if (playAgain && e.GetKeyCode() == DWARF_KEY_SPACE) { //if playagain and space key is pressed then restart game
 		RestartGame();
 	}
 }
 
-void MyGame::RestartGame()
+void MyGame::RestartGame() //to restart game, initialize everything
 {
 	time = 0;
 	gameEnd = false;
