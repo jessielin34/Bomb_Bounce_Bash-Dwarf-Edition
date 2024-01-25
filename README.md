@@ -8,3 +8,7 @@ Unique:
 3)I've implemented a press space bar to restart game function in which after it's game over, the user can
 press space bar to continue.
 4)I implemented scoring shown on the terminal since we never rendered text in our game engine
+
+
+https://github.com/jessielin34/moving_game/assets/80348079/ffd38dfe-d0ed-41ee-a212-1fdf4e2d0234
+
